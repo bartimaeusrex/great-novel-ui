@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default ({ id, title, firstName, lastName }) => (
+export default ({ id, title, name }) => (
   <div key={id} className="novel">
-    {`${title} by ${firstName} ${lastName}`}
+    {`${title} by ${name}`}
   </div>
 )

@@ -6,6 +6,8 @@ import { getAllNovels, getNovelByIdOrTitle } from './controllers/novels'
 
 const app = express()
 
+app.use(express.static('public'))
+
 app.get('/api/authors', getAllAuthors)
 app.get('/api/authors/:identifier', getAuthorByIdOrName)
 

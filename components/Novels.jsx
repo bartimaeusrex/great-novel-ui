@@ -34,10 +34,9 @@ export default () => {
           filteredNovelList.map(novel => (
             <Novel
               key={novel.id}
-              id={novel.id}
-              name={novel.name}
-              country={novel.country}
-            /> // ABOVE!! ^^^^ Need to get at the title of the novel, and the names of the author.
+              title={novel.title}
+              name={`${novel.author.nameFirst} ${novel.author.nameLast}`}
+            />
           ))
         }
       </div>
